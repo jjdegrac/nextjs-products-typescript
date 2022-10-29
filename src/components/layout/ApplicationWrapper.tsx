@@ -10,11 +10,17 @@ interface TProps{
     description?: string;
 }
 
-export const ApplicationWrapper: FC<PropsWithChildren<TProps>> = ({title, description, children}) => {
+export const ApplicationWrapper: FC<PropsWithChildren<TProps>> = ({
+  title, 
+  description,
+  children,
+}) => {
+  const displayTitle = `${title} | Rootlab Movies`
+
   return (
     <div className="bg-black min-h-screen flex flex-col">
         <Head>
-            <title>{title} | Rootlab Movies</title>
+            <title>{displayTitle}</title>
             {description && <meta name='description' content={description}/>}
             <link rel="icon" href="/favicon.ico" />
         </Head>

@@ -23,21 +23,11 @@ export interface IMovie{
   "Poster": string
 }
 
-const useMovies = ()=>{
-    const [movies, setMovies] = useState<IMovie[]>([])
-    useEffect(()=>{
-        fetch(process.env.NEXT_PUBLIC_API_URL + '/movies/')
-        .then(res => res.json())
-        .then((data: IMovie[])=> setMovies(data.slice(0,20)))
-        .catch((error)=> console.error(error))
-    },[])
-    
-    return movies  
+interface Props {
+  movies: IMovie[]
 }
 
-export const MovieList = () => {
-    const movies = useMovies()
-    console.log(movies)  
+export const MovieList = ({movies}:Props) => {
   return (
     <div className=' flex flex-col justify-center text-white items-center'>
         <ul className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-5 p-6'>

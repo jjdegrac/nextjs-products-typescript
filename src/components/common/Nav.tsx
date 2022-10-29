@@ -9,8 +9,7 @@ export const Nav = () => {
         </Link>
         {/* -- 5px -- */}
         <Link href="/movies">
-            <a>Movies</a>
-            
+            <a>Movies</a>            
         </Link>        
     </nav>
   )
