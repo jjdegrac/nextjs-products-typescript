@@ -28,7 +28,7 @@ export const ApplicationWrapper: FC<PropsWithChildren<TProps>> = ({
             <Nav/>
         </header>
         <main className='grow flex flex-col text-white'>{children}</main>
-        <footer className='flex p-6 h-20 text-black bg-white items-center justify-center'>
+        <footer className='flex p-6 h-20 text-black bg-white items-center justify-center flex-col'>
         <a
           href="https://rootstack.com/en"
           target="_blank"
@@ -39,6 +39,16 @@ export const ApplicationWrapper: FC<PropsWithChildren<TProps>> = ({
             RootStack
           </span>
         </a>
+        <br/>
+        <a
+          href="https://www.linkedin.com/in/jos%C3%A9-jair-de-gracia-s%C3%A1nchez-a22019247/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >          
+          <span className="">
+             José De Gracia | jjairdegracia@gmail.com 
+          </span>          
+        </a>        
       </footer>
     
     </div>
