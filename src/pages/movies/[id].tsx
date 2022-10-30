@@ -21,19 +21,14 @@ export const MovieDetailPage: NextPage<TProps> = ({movie}) => {
           </strong>          
         </div>       
         <div className='flex flex-col justify-center items-center'>
-        <Image className=''  
-            src={movie.Poster} 
-            alt={`${movie.Title} Poster`}
-            width={300}
-            height={400}/>
-            <a className=' text-white text-right'>
-              {movie.Title}
-            </a>            
-            <a className=' text-white text-right'>
-              {movie['Major Genre']}
-            </a>
-                      
-          
+          <Image className=''  
+              src={movie.Poster} 
+              alt={`${movie.Title} Poster`}
+              width={300}
+              height={400}/>
+          <a><a className=' font-extrabold text-white text-right'>Titulo: </a>{movie.Title}</a> 
+          <a><a className=' font-extrabold text-white text-right'>Genero: </a>{movie['Major Genre']}</a>
+          <a><a className=' font-extrabold text-white text-right'>Fecha de publicación: </a>{movie['Release Date']}</a>  
         </div>      
       </div>
               
