@@ -16,7 +16,7 @@ const Home: NextPage <HomeProps>= ({ response }) => {
       title='Home' 
       description='Home of the rootlab movies website'
       >
-        <div className="grow flex flex-col justify-center items-center bg-[url('/images/Zelda.jpg')]">
+        <div className="grow flex flex-col justify-center items-center bg-[url('/images/zelda.jpg')]">
           <div className='grow bg-black w-full justify-center items-center flex opacity-50'>
             <h1 className="text-5xl font-bold underline text-white">
               Bienvenidos a Rootlab Movies!
